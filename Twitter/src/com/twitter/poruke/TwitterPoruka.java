@@ -37,7 +37,7 @@ public class TwitterPoruka {
 	 * @return tekst poruke
 	 */
 	public String getPoruka() {
-		return "poruka";
+		return poruka;
 	}
 	/**
 	 * Postavlja tekst poruke
@@ -45,7 +45,7 @@ public class TwitterPoruka {
 	 * @throws RuntimeException kada tekst poruke nije unet ili je tekst kraci od 140 znakova
 	 */
 	public void setPoruka(String poruka) {
-		if (poruka==null || this.poruka.length()>140)
+		if (poruka==null || poruka.length()>140)
 		throw new RuntimeException(
 		"Poruka mora biti uneta i mora imati najvise 140 znakova");
 		this.poruka = poruka;
