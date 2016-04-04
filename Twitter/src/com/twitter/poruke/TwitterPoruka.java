@@ -41,7 +41,7 @@ public class TwitterPoruka {
 	}
 	/**
 	 * Postavlja tekst poruke
-	 * @param poruka
+	 * @param poruka naziv poruke
 	 * @throws RuntimeException kada tekst poruke nije unet ili je tekst kraci od 140 znakova
 	 */
 	public void setPoruka(String poruka) {
